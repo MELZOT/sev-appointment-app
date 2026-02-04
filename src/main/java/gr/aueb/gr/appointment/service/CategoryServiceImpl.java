@@ -31,6 +31,7 @@ public class CategoryServiceImpl implements CategoryService {
     public CategoryResponse create(CategoryCreateRequest req) {
         Category category = Category.builder()
                 .name(req.getName())
+                .description(req.getDescription()) // ✅
                 .build();
 
         return toResponse(repository.save(category));
@@ -42,6 +43,7 @@ public class CategoryServiceImpl implements CategoryService {
                 .orElseThrow(() -> new ResourceNotFoundException("Category not found: " + id));
 
         category.setName(req.getName());
+        category.setDescription(req.getDescription()); // ✅
 
         return toResponse(repository.save(category));
     }
@@ -58,6 +60,7 @@ public class CategoryServiceImpl implements CategoryService {
         return CategoryResponse.builder()
                 .id(c.getId())
                 .name(c.getName())
+                .description(c.getDescription()) // ✅
                 .build();
     }
 }
