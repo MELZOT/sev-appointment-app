@@ -15,4 +15,4 @@ public interface AppointmentService {
     AppointmentResponse getById(Long id);
 
     List<AppointmentResponse> getAll();
-}
+}//

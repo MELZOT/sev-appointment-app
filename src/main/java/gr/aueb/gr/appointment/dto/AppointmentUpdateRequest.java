@@ -41,4 +41,4 @@ public class AppointmentUpdateRequest {
     @NotNull
     private Long categoryId;
 
-}
+}//

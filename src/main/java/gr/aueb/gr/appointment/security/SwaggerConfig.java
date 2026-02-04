@@ -24,4 +24,5 @@ public class SwaggerConfig {
                 .components(new Components().addSecuritySchemes(schemeName, bearerScheme))
                 .addSecurityItem(new SecurityRequirement().addList(schemeName));
     }
-}
+}//
+

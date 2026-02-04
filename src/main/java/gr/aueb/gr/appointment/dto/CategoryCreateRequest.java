@@ -15,4 +15,4 @@ public class CategoryCreateRequest {
     @Size(max = 60)
     private String name;
     private String description;
-}
+}//

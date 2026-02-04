@@ -24,3 +24,4 @@ public class AppointmentResponse {
     private CategoryResponse category;
 
 }
+//

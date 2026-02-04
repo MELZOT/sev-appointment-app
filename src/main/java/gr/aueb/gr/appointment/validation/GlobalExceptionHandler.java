@@ -27,6 +27,6 @@ public class GlobalExceptionHandler {
         return Map.of(
                 "error", "Validation failed",
                 "fields", fields
-        );
+        );//
     }
 }

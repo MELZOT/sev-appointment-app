@@ -19,4 +19,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, Long> 
     //  Φορτώνει appointment και category με id
     @Query("select a from Appointment a left join fetch a.category where a.id = :id")
     Optional<Appointment> findByIdWithCategory(@Param("id") Long id);
-}
+}//
