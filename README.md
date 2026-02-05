@@ -64,5 +64,3 @@ http://localhost:8080/swagger-ui.html
 Τα credentials της βάσης δεδομένων και το JWT secret δεν περιλαμβάνονται στο repository
 και πρέπει να ρυθμιστούν τοπικά.
 
-yaml
-Copy code
