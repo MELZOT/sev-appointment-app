@@ -27,10 +27,7 @@ public class AppointmentServiceImpl implements AppointmentService {
     @Override
     public AppointmentResponse create(AppointmentCreateRequest req) {
 
-        // UI έχει dropdown
-        if (req.getCategoryId() == null) {
-            throw new IllegalArgumentException("categoryId is required");
-        }
+
 
         Category category = categoryRepository.findById(req.getCategoryId())
                 .orElseThrow(() -> new ResourceNotFoundException(

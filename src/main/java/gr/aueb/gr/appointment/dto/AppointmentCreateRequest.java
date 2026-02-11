@@ -5,7 +5,7 @@ import jakarta.validation.constraints.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import jakarta.validation.constraints.NotNull;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -36,7 +36,8 @@ public class AppointmentCreateRequest {
     @Size(max = 30)
     private String tel;
 
-    @NotNull
+    @NotNull(message = "categoryId is required")
     private Long categoryId;
 
-}//
+
+}
